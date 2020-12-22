@@ -1,0 +1,27 @@
+.header{
+    height:20vh;
+    background-color: hsl(217, 28%, 15%);
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    .header__logo{
+        margin-left:50px;
+    }
+    .header__nav{
+        width:30%;
+    }
+    .nav__list{
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+    .nav__item-link{
+        text-decoration: none;
+        font-family:map-get($font-family,main);
+        transform: .2s;
+        &:hover{
+            font-weight:map-get($font-weights,bold);
+        }
+    }
+}

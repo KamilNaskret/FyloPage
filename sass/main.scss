@@ -1,0 +1,131 @@
+@import 'config';
+@import 'wrapper';
+@import 'header';
+@import 'mainH';
+@import 'offerts';
+@import 'motivation';
+@import 'blog';
+@import 'newsletter';
+@import 'footer';
+
+@media (max-width:1000px){
+    .main__middle{
+        height:50vh;
+    }
+}
+
+@media(max-width:900px){
+    .header .header__logo{
+        margin-left:20px;
+        img{
+            height:30px;
+        }
+    }
+    .header .header__nav{
+        width:50%;
+        margin-right:15px;
+    }
+    .main__description{
+        width:100%;
+    }
+    .offerts{
+        padding:50px 0;
+        grid-template-columns: 1fr;
+        &__offert{
+            width:80%;
+            max-width:350px;
+        }
+    }
+    .motivation{
+        flex-direction: column;
+        padding:50px 35px;
+        img{
+            height:200px;
+        }
+        &__text{
+            margin-top:30px;
+            width:100%;
+        }
+        &__title{
+            font-size:22px;
+        }
+        &__link{
+            img{
+                height:auto;
+            }
+        }
+    }
+    .blog{
+        flex-direction: column;
+        &__comment{
+            margin:20px auto;
+            max-width:350px;
+        }
+    }
+    .newsletter{
+        &__container{
+            width:90%;
+            max-width:500px;
+            margin:0 auto;
+            bottom:-150%;
+        }
+        &__desc{
+            padding:0 20px;
+        }
+        &__form{
+            flex-direction: column;
+            &-input{
+                width:85%;
+                margin:0 auto 20px;
+                padding:15px 10px;
+            }
+            &-btn{
+                padding:15px 10px;
+                margin:0 auto;
+                width:85%;
+            }
+        }
+    }
+    .footer{
+        padding:250px 20px 0;
+        &__contact{
+            grid-template-columns: 1fr;
+            grid-template-rows:repeat(20,1fr);
+            grid-template-areas: 
+            "position"
+            "description"
+            "description"
+            "description"
+            "description"
+            "telephone"
+            "mail"
+            "routers"
+            "routers"
+            "routers"
+            "routers"
+            "routers"
+            "routers"
+            "routers"
+            "routers"
+            "socials";
+            justify-items: flex-start;
+        }
+        &__routers{
+            margin-top:20px;
+        }
+        &__socials{
+            justify-content: center;
+            width:100%;
+        }
+    }
+}
+@media (max-width:768px){
+    .newsletter__container{
+        bottom:-100%;
+    }
+}
+@media (max-width:414px){
+    .newsletter__container{
+        bottom:-150%;
+    }
+}

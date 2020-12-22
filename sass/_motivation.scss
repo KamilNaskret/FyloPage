@@ -1,0 +1,25 @@
+.motivation{
+    min-height:40vh;
+    background-color: hsl(218, 28%, 13%);
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    padding:50px;
+    &__text{
+        width:30%;
+    }
+    &__title{
+        font-size:$fontSize*2;
+        font-family:map-get($font-family,main);
+        margin-bottom:20px;
+    }
+    &__desc{
+        margin:10px 0;
+        font-size:$fontSize;
+        line-height:150%;
+        font-family:map-get($font-family,main);
+    }
+    &__link{
+        color:hsl(176, 68%, 64%);
+    }
+}
